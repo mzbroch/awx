@@ -1,6 +1,6 @@
 # ntc-awx-template
 
-## Docker-compose
+## AWX installation via Docker-compose
 
 High-level goal of this project is to introduce a standard AWX's installation @ NTC.
 
@@ -20,6 +20,11 @@ Additionally, this template provides:
 - Makefile for managing custom virtual environments
 
 ### Installation:
+
+#### Pre-requirements:
+- Python3 installed on host
+- Docker installed on host
+
 #### Clone template into base-dir:
 ```git clone https://github.com/mzbroch/awx.git /opt/ntc```
 
