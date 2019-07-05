@@ -12,5 +12,9 @@ get_awx:
 	git clone https://github.com/ansible/awx.git $(NTC_BASE)/awx_source
 
 install_awx:
-	ansible-playbook -i $(NTC_BASE)/awx_installer/inventory $(NTC_BASE)/awx_source/installer/install.yml
+	if [ "$(NTC_BASE)/host_venv" ]; then \
+		. $(NTC_BASE)/host_venv/awx/bin/activate; \
+		$(NTC_BASE)/host_venv/bin/ansible-playbook -i $(NTC_BASE)/awx_installer/ntc_inventory $(NTC_BASE)/awx_source/installer/install.yml ;\
+	fi; \
 
+ntc_awx: install_host_venv get_awx install_awx
