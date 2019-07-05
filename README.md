@@ -12,9 +12,9 @@ AWX + docker-compose recommendations:
 
 ### Assumptions
 This template automates following steps:
-- Installs virtual environment for host only (including Ansible needed to install AWX)
+- Installs python3 virtual environment for the host (including Ansible needed to install AWX)
 - Downloads current AWX's sources
-- Installs AWX from sources (local variables are provided by awx_install/ntc_inventory customized file)
+- Installs AWX from fetched sources (local variables are provided by from this repo awx_install/ntc_inventory customized file)
 
 Additionally, this template provides:
 - Makefile for managing custom virtual environments
