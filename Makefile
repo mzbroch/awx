@@ -13,7 +13,7 @@ get_awx:
 
 install_awx:
 	if [ "$(NTC_BASE)/host_venv" ]; then \
-		. $(NTC_BASE)/host_venv/awx/bin/activate; \
+		. $(NTC_BASE)/host_venv/bin/activate; \
 		$(NTC_BASE)/host_venv/bin/ansible-playbook -i $(NTC_BASE)/awx_installer/ntc_inventory $(NTC_BASE)/awx_source/installer/install.yml ;\
 	fi; \
 
