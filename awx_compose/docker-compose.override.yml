@@ -7,12 +7,12 @@ version: '2'
 #services:
 #  web:
 #    volumes:
-#      - "/opt/ntc/awxcompose/ntc_data:/opt/ntc_data"
+#      - "/opt/ntc/awx_compose/ntc_data:/opt/ntc_data"
 #      - "venv_1:/var/lib/awx/venv/venv_1"
 #      - "venv_2:/var/lib/awx/venv/venv_2"
 
 #  task:
 #    volumes:
-#      - "/opt/ntc/awxcompose/ntc_data:/opt/ntc_data"
+#      - "/opt/ntc/awx_compose/ntc_data:/opt/ntc_data"
 #      - "venv_1:/var/lib/awx/venv/venv_1"
 #      - "venv_2:/var/lib/awx/venv/venv_2"
