@@ -8,6 +8,7 @@ AWX + docker-compose recommendations:
 - For customers who start with containers / minimal knowledge / no existing orchestration
 - Ideally 1 AWX instance per a dedicated virtual-machine
 - Disaster-recovery ideally offloaded to VM layer (failover via hypervisor)
+- PostgreSQL and data installed locally in /opt/ntc
 
 ### Assumptions
 This template automates following steps:
